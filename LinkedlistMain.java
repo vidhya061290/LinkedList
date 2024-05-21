@@ -9,6 +9,7 @@ public class LinkedlistMain {
 		linklist.prepend(3);
 		linklist.prepend(6);
 		linklist.append(7);
+		linklist.removeNode(2);
 		System.out.println(linklist);
 		
 		

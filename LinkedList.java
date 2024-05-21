@@ -38,5 +38,23 @@ public String toString() {
 	}
 		return list.toString();
 	}
+
+public void removeNode(T value ) {
+//	Node<T> prevNode = new Node<T>(value);
+	Node<T> currNode = this.head;
+	
+    while(head != null  &&  head.getValue() == value) {
+	this.head = head.getNext();
+	} 
+    while(currNode != null && currNode.next != null) {
+		 if(currNode.next.getValue() == value) {
+			currNode.next = currNode.next.next;
+		 }else
+		 {
+		 currNode= currNode.next;
+		 }
 	
 }
+}
+}
+
